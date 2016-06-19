@@ -1,0 +1,26 @@
+!!! 5
+%html
+	%head
+		%title Pin board
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= csrf_meta_tags
+	%body
+		- flash.each do |name, msg
+		= content_tag
+
+		
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Rise Visual Library for Global Artisan Goods</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
