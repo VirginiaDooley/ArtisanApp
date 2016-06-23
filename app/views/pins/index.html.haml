@@ -1,5 +1,5 @@
-.col-md-6.col-md-offset-3
-	= link_to 'New', new_pin_path
-
-	- @pins.each do |pin|
-		%h2= link_to pin.title, pin
+= link_to 'New', new_pin_path
+%p
+- @pins.each do |pin|
+	%h2= link_to pin.title, pin
+	= link_to (image_tag pin.image.url(:medium)), pin

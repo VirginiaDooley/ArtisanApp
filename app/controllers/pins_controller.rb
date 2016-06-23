@@ -8,6 +8,7 @@ class PinsController < ApplicationController
 	end
 
 	def show
+		@pin = Pin.find(params[:id])
 	end
 
 	def new
@@ -16,6 +17,8 @@ class PinsController < ApplicationController
 	end
 
 	def create
+	  # @pin = Pin.new(pin_params)
+	  # @pin.user_id = current_user.id
 		@pin = current_user.pins.build(pin_params)
 
 		if @pin.save
@@ -41,11 +44,22 @@ class PinsController < ApplicationController
 		redirect_to root_path
 	end
 
+	def correct_user
+	 @pin = current_user.pins.find_by(id: params[:id])
+  	redirect_to pins_path, notice: "Not authorized to edit this pin" if @pin.nil?
+	end
+
+	def set_callbacks(name, callbacks)
+	  send "_#{name}_callbacks=", callbacks
+	end
+
+	def set_pin
+	end
 
 	private
 
 	def pin_params
-		params.require(:pin).permit(:title, :description)
+		params.require(:pin).permit(:title, :description, :image)
 	end
 
 	def find_pin
