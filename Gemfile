@@ -20,6 +20,8 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 #to attach photos
 gem "paperclip", "~> 5.0.0.beta1"
+#
+gem 'masonry-rails', '~> 0.2.4'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
