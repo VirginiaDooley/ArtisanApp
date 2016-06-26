@@ -8,9 +8,8 @@
 %body
 	%nav.navbar.navbar-default
 		.container
-			.navbar-brand= link_to image_tag("assets/theriselogo.png"), root_path
-		
-
+			.navbar-brand= link_to "THE RISE : A visual library for artisan goods", root_path
+			
 			-if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "New Pin", new_pin_path
