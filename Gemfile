@@ -39,6 +39,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+# for heroku
+group :development do
+   #gem 'sqlite' -> comment out for now
+end
+
+group :production do
+   gem 'pg'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
