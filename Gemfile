@@ -44,6 +44,9 @@ gem 'rails_12factor'
 # Use Unicorn as the app server
 # gem 'unicorn'
 # for heroku
+#A Ruby Web Server Built For Concurrency
+gem 'puma'
+
 group :development do
    gem 'sqlite3'
 end
