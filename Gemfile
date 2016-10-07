@@ -41,7 +41,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 # for heroku
 group :development do
-   #gem 'sqlite' -> comment out for now
+   gem 'sqlite3'
 end
 
 group :production do
