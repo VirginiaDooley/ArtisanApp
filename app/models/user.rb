@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :pins, dependent: :destroy
-  validates :name, presence: true
-	validates :name, length: { minimum: 2 }
+ #  validates :name, presence: true
+	# validates :name, length: { minimum: 2 }
 end
