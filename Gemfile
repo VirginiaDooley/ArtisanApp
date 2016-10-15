@@ -45,7 +45,9 @@ gem 'rails_12factor'
 # gem 'unicorn'
 # for heroku
 
-
+#images for heroku
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :development do
    gem 'sqlite3'
