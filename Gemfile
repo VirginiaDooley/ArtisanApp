@@ -49,6 +49,9 @@ gem 'rails_12factor'
 gem 'carrierwave'
 gem 'cloudinary'
 
+#direct statis asset uploads for heroku
+gem 'aws-sdk', '~> 2'
+
 group :development do
    gem 'sqlite3'
 end
