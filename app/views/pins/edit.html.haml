@@ -6,6 +6,6 @@
 		.panel-body
 			%strong.center Current Image
 			%br
-			= image_tag @pin.image.url(:medium)
+			= cl_image_tag @pin.image.url(:medium)
 			= render 'form'
 			= link_to "Cancel", pin_path

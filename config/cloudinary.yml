@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hxctmkspr
+  api_key: '571212138782746'
+  api_secret: 2EtSitVy3XS9n3EboApgefM-b5U
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hxctmkspr
+  api_key: '571212138782746'
+  api_secret: 2EtSitVy3XS9n3EboApgefM-b5U
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hxctmkspr
+  api_key: '571212138782746'
+  api_secret: 2EtSitVy3XS9n3EboApgefM-b5U
+  enhance_image_tag: true
+  static_image_support: false
