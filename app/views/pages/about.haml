@@ -10,7 +10,11 @@
 	%nav.navbar.navbar-default
 		.container
 			.navbar-brand
+<<<<<<< HEAD
 				= link_to image_tag('TheRiseLogo.png'), root_path
+=======
+				= link_to image_tag('TheRiseLogo.png'), root_path
+>>>>>>> 54884c7583b5e2299d964ca74ecfcb66c1fbcef7
 
 			-if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
@@ -26,6 +30,7 @@
 		- flash.each do |name, msg|
 			= content_tag :div, msg, class: "alert alert-info"
 
+		.container
 		What is this? 
 
 		A highly visual/editorial/curated site dedicated to telling the stories of artisans and their crafts. The saturation of traditional textiles on the high street is threatening the global artisan market, the culture of craft, value of hand made goods and ulitmately, artisan livelihoods. 
