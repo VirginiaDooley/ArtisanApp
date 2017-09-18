@@ -30,11 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 nav {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.66);
 	.navbar-brand {
-
-	 padding: 0;
-   margin: 0;
 		a {
-			color: #BD1E23;
+			padding: 10;
+   		margin: 10;
+   		color: #BD1E23;
 			font-weight: bold;
 			&:hover {
 				text-decoration: none;
