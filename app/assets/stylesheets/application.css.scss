@@ -13,10 +13,12 @@ a/*
  *= require 'masonry/transitions'
  *= require_tree .
  *= require_self
- */
+
 
 @import "bootstrap-sprockets"
 @import "bootstrap"
+
+ */
 
 body {
 	background: #E9E9E9;
